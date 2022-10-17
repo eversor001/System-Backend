@@ -1,0 +1,23 @@
+server:
+  port: 8000
+
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/panteur/RedStake_Proyect.git
+          searchPaths: config-data
+          username: eversor.dev@gmail.com
+          password: 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
+          defaultLabel: master
+        bootstrap: true
+      enable: true
+  application:
+    name: config-service
+  security:
+    user:
+      name: cfgservice
+      password: s3cr3t
+
